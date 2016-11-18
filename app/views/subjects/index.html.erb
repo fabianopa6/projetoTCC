@@ -1,5 +1,5 @@
 <% @subjects.each do |subject| %>
-	<h2><%= subject.name %></h2>
+	<h2><%= link_to subject.name, subject_path(subject) %></h2>
 <% end %>
 
 <%= link_to "Nova Disciplina", new_subject_path %>
